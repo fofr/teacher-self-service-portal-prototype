@@ -1,0 +1,90 @@
+{% extends "layouts/default.html" %}
+
+{% set title = "Teaching Regulation Agency" %}
+
+{% block pageNavigation %}
+  {{ govukBreadcrumbs({
+    classes: "x-govuk-breadcrumbs--inverse",
+    items: [
+      {
+        text: "Home",
+        href: "#"
+      },
+      {
+        text: "Teacher Self Service",
+        href: "#"
+      },
+      {
+        text: "Teacher",
+        href: "#"
+      }
+    ]
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible govuk-!-margin-top-0">
+
+    <p>Welcome to Teacher Self Service. You can use this service to view your teaching status and qualifications, download certification of your teaching status and update and correct your personal and contact details.</p>
+
+    <p>The certificates are provided in an Adobe PDF format and it is recommended that they are viewed using free up-to-date Adobe reader software.</p>
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+    <ul class="govuk-list">
+      <li><a href="#">Teacher details</a></li>
+      <li><a href="#">Employment</a></li>
+      <li><a href="#">Initial teacher training</a></li>
+      <li><a href="#">QTS status</a></li>
+      <li><a href="#">EYTS status</a></li>
+      <li><a href="#">Induction status</a></li>
+      <li><a href="#">Supplementary qualifications</a></li>
+      <li><a href="#">Alerts</a></li>
+    </ul>
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <div class="app-tra-panel govuk-!-margin-bottom-2">
+      <h3 class="govuk-heading-s">TRA contact information</h3>
+
+      <p class="govuk-!-font-size-16 govuk-!-margin-bottom-1">
+        Email<br />
+        <a href="#">QTS.enquiries@education.gov.uk</a>
+      </p>
+    </div>
+
+    <div class="app-tra-panel app-tra-panel--green govuk-!-margin-bottom-2">
+      <p>Are your details correct?</p>
+
+      <ul class="govuk-list govuk-!-margin-bottom-1">
+        <li><a href="#">Update your contact details</a></li>
+        <li><a href="#">Update your employment details</a></li>
+        <li><a href="#">Update your name</a></li>
+        <li><a href="#">Update your Date of Birth</a></li>
+        <li><a href="#">Update your National Insurance number</a></li>
+      </ul>
+    </div>
+
+    <ul class="govuk-list govuk-!-margin-bottom-2 govuk-!-font-size-16">
+      <li><a href="#">Request a QTS certificate</a></li>
+      <li><a href="#">Request a letter confirming your teaching qualifications</a></li>
+      <li><a href="#">Request an induction certificate</a></li>
+      <li><a href="#">Request an NPQH certificate</a></li>
+      <li><a href="#">Request an NPQSL certificate</a></li>
+      <li><a href="#">Request EYTS certificate</a></li>
+    </ul>
+
+    <div class="app-tra-panel govuk-!-margin-bottom-2">
+      <h3 class="govuk-heading-s">Account controls</h3>
+      <p>Do you wish to lock your Teacher Self-Service account?</p>
+      <p><a href="#">Read more</a></p>
+
+      {{ govukButton({
+        text: 'Lock account',
+        classes: 'govuk-button--secondary'
+      }) }}
+    </div>
+  </div>
+</div>
+{% endblock %}

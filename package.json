@@ -8,7 +8,7 @@
     "node": ">=16.0.0"
   },
   "prototype": {
-    "serviceName": "Your service name"
+    "serviceName": "Teacher self-service portal"
   },
   "stylelint": {
     "extends": "stylelint-config-gds/scss"
