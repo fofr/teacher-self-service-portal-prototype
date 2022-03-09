@@ -9,9 +9,6 @@ $govuk-assets-path: "/govuk/assets/";
 // Override the default GOV.UK Frontend font stack
 $govuk-font-family: "Arial", "Helvetica", sans-serif;
 $govuk-link-colour: #0000cc;
-$tra-green: #24651e;
-$tra-grey: #f5f2f2;
-$tra-dark-grey: #e5e5e5;
 
 // Import GOV.UK Frontend
 @import "govuk-frontend/govuk/all";
@@ -27,83 +24,4 @@ $tra-dark-grey: #e5e5e5;
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
-.govuk-template,
-.govuk-template__body {
-  background-color: $tra-dark-grey;
-}
-
-.govuk-width-container {
-  background-color: govuk-colour('white');
-}
-
-.govuk-main-wrapper {
-  border-bottom: 5px solid $tra-green;
-}
-
-.app-tra-header {
-  background: linear-gradient(to bottom, #ffffff 0%,#ecf7ff 100%);
-  padding: govuk-spacing(9) govuk-spacing(3) govuk-spacing(2) govuk-spacing(3)
-}
-
-.app-tra-section {
-  background-color: $tra-green;
-  color: govuk-colour('white');
-  padding: govuk-spacing(1) govuk-spacing(3);
-
-  .govuk-breadcrumbs {
-    border: none;
-    margin: 0;
-  }
-}
-
-.app-\!-inherit-colour {
-  color: inherit !important;
-}
-
-.app-\!-tra-green {
-  color: $tra-green !important;
-}
-
-.app-tra-logged-in {
-  padding: govuk-spacing(1) govuk-spacing(3);
-  background-color: $tra-grey;
-
-  p {
-    margin: 0;
-  }
-}
-
-.app-tra-wrapper,
-.govuk-main-wrapper {
-  padding-left: govuk-spacing(3);
-  padding-right: govuk-spacing(3);
-}
-
-.app-tra-panel {
-  background-color: $tra-grey;
-  padding: govuk-spacing(2);
-
-  p,
-  a {
-    @include govuk-font(16);
-  }
-}
-
-.app-tra-panel--green {
-  background-color: $tra-green;
-  color: govuk-colour('white');
-
-  p,
-  a {
-    color: govuk-colour('white');
-  }
-}
-
-.app-tra-footer {
-  border: none;
-  background: $tra-dark-grey;
-
-  .govuk-width-container {
-    background: none;
-  }
-}
+@import "tra.scss";

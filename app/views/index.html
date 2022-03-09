@@ -9,11 +9,21 @@
       html: serviceName + " prototype" | noOrphans
     },
     startButton: {
-      href: "#",
+      href: "/start",
       text: "View prototype"
-    },
-    image: {
-      src: mastheadImageDataURI
     }
   }) }}
+
+  <div class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-6">
+        <p>A wirefame-prototype that reproduces a simplified version of the <a href="https://tra-digital-design-history.herokuapp.com/teacher-self-service-portal/overview/">Teacher Self-service portal</a></p>
+
+        <ul class="govuk-list">
+          <li><a href="https://github.com/fofr/teacher-self-service-portal-prototype">Github repository</a></li>
+          <li><a href="https://tra-digital-design-history.herokuapp.com/teacher-self-service-portal/">Design history</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 {% endblock %}
