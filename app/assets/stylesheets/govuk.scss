@@ -3,9 +3,6 @@ $govuk-global-styles: true;
 $govuk-new-link-styles: true;
 $govuk-assets-path: "/govuk/assets/";
 
-// Import settings first so we can override them before importing all of GOV.UK Frontend
-@import "govuk-frontend/govuk/settings/all";
-
 // Import GOV.UK Frontend
 @import "govuk-frontend/govuk/all";
 
