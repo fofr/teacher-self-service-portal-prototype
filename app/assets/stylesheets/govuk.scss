@@ -1,0 +1,19 @@
+// GOV.UK Frontend options
+$govuk-global-styles: true;
+$govuk-new-link-styles: true;
+$govuk-assets-path: "/govuk/assets/";
+
+// Import settings first so we can override them before importing all of GOV.UK Frontend
+@import "govuk-frontend/govuk/settings/all";
+
+// Import GOV.UK Frontend
+@import "govuk-frontend/govuk/all";
+
+// Import GOV.UK Markdown styles
+@import "govuk-markdown/x-govuk/all";
+
+// Import GOV.UK Prototype Components
+@import "govuk-prototype-components/x-govuk/all";
+
+// Email styles
+@import "email.scss";

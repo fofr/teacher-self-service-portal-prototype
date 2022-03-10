@@ -14,11 +14,13 @@
     "extends": "stylelint-config-gds/scss"
   },
   "scripts": {
+    "build-assets-for-govuk-pages": "rollup --config rollup.govuk-config.js --silent",
+    "watch-assets-for-govuk-pages": "rollup --config rollup.govuk-config.js --silent --watch",
     "build-assets": "rollup --config --silent",
     "watch-assets": "rollup --config --silent --watch",
     "serve": "govuk-prototype-rig",
-    "start": "npm-run-all --serial build-assets serve",
-    "dev": "npm-run-all --parallel watch-assets serve",
+    "start": "npm-run-all --serial build-assets build-assets-for-govuk-pages serve",
+    "dev": "npm-run-all --parallel watch-assets watch-assets-for-govuk-pages serve",
     "lint": "standard && stylelint 'app/**/*.scss'"
   },
   "workspaces": [
