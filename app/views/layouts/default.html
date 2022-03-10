@@ -1,5 +1,6 @@
 {% extends "template.njk" %}
 {% set htmlClasses = 'app-tra' %}
+{% set name = data.firstName + ' ' + data.lastName %}
 
 {% block head %}
   <link rel="stylesheet" href="/public/stylesheets/application.css" media="all">
@@ -29,16 +30,16 @@
     {% block pageNavigation %}{% endblock %}
   </div>
   <div class="app-tra-logged-in">
-    <p class="govuk-!-font-size-16">You are currently logged into Teacher Self Service as: <strong>Jane Doe</strong> <a href="#">Log out »</a></p>
+    <p class="govuk-!-font-size-16">You are currently logged into Teacher Self Service as: <strong>{{ name }}</strong> <a href="#">Log out »</a></p>
   </div>
   <div class="app-tra-wrapper govuk-!-margin-top-2">
     <div class="govuk-heading-m govuk-!-font-weight-regular">
-      Jane Doe
+      {{ name }}
     </div>
     <div class="govuk-heading-s govuk-!-margin-bottom-1">
       Teacher reference number
     </div>
-    <p class="govuk-!-margin-bottom-0">1234567</p>
+    <p class="govuk-!-margin-bottom-0">{{ data.trn }}</p>
   </div>
 {% endblock %}
 
@@ -49,9 +50,6 @@
       items: [{
         text: "Clear session data",
         href: "/clear-session-data"
-      } if useAutoStoreData, {
-        text: "Feature flags",
-        href: "/feature-flags"
       }],
       visuallyHiddenTitle: "Footer links"
     }

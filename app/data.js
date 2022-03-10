@@ -7,12 +7,21 @@
  * existing application.
  */
 export default {
-  // Set feature flags using the `features` key
-  features: {
-    demo: {
-      on: false,
-      name: 'Demonstration',
-      description: 'Show message about feature flags on the home page.'
-    }
+  features: {},
+  firstName: 'Jane',
+  lastName: 'Doe',
+  middleName: 'June',
+  trn: '1234567',
+  dob: '31/03/1950',
+  nino: 'QQ123456C',
+  email: 'jane.doe@example.com',
+  title: 'Mrs.',
+  previousSurnames: ['Bloggs'],
+  primaryContactNumber: '07123456789',
+  otherContactNumber: '01234 987654',
+  address: {
+    line1: '1 Street Name',
+    town: 'Town',
+    postcode: 'SW1 1AA'
   }
 }
