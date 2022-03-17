@@ -1,0 +1,46 @@
+{% extends "layouts/default.html" %}
+
+{% set title = "Update your National Insurance number" %}
+
+{% block pageNavigation %}
+  {{ govukBreadcrumbs({
+    classes: "x-govuk-breadcrumbs--inverse",
+    items: [
+      {
+        text: "Home",
+        href: "#"
+      },
+      {
+        text: "Teacher Self Service",
+        href: "#"
+      },
+      {
+        text: title
+      }
+    ]
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible govuk-!-margin-top-0">
+
+    <h1 class="govuk-heading-m">{{ title }}</h1>
+    <p>We’ve hidden parts of your National Insurance number to protect your data.</p>
+
+    <div class="app-tra-form govuk-!-margin-bottom-6">
+    {{ govukInput({
+      label: {
+        text: 'National Insurance number'
+      },
+      decorate: "redacted.nino"
+    }) }}
+    </div>
+
+    {{ govukButton({
+      text: 'Save changes'
+    }) }}
+  </div>
+</div>
+{% endblock %}

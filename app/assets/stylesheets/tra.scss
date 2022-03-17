@@ -55,6 +55,12 @@ $tra-dark-grey: #e5e5e5;
     padding-right: govuk-spacing(3);
   }
 
+  .app-tra-form {
+    background-color: $tra-grey;
+    padding: govuk-spacing(2);
+    border: 1px solid $tra-dark-grey;
+  }
+
   .app-tra-panel {
     background-color: $tra-grey;
     padding: govuk-spacing(2);
