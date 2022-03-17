@@ -27,22 +27,97 @@
   <div class="govuk-grid-column-two-thirds">
     <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible govuk-!-margin-top-0">
 
-    <p>Welcome to Teacher Self Service. You can use this service to view your teaching status and qualifications, download certification of your teaching status and update and correct your personal and contact details.</p>
-
-    <p>The certificates are provided in an Adobe PDF format and it is recommended that they are viewed using free up-to-date Adobe reader software.</p>
+    <p>You can use this service to view your teaching status and qualifications, download certificates and update your personal details.</p>
 
     <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
     <ul class="govuk-list">
-      <li><a href="#">Teacher details</a></li>
-      <li><a href="#">Employment</a></li>
-      <li><a href="#">Initial teacher training</a></li>
+      <li><a href="#teacher-details">Teacher details</a></li>
+      <li><a href="#itt">Initial teacher training</a></li>
       <li><a href="#">QTS status</a></li>
       <li><a href="#">EYTS status</a></li>
       <li><a href="#">Induction status</a></li>
       <li><a href="#">Supplementary qualifications</a></li>
       <li><a href="#">Alerts</a></li>
     </ul>
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible govuk-!-margin-top-0">
+
+    <h2 class="govuk-heading-m" id="teacher-details">Teacher details</h2>
+
+    {{ govukSummaryList({
+      classes: "govuk-summary-list--no-border app-tra-summary-list",
+      rows: [
+        {
+          key: {
+            text: "First name"
+          },
+          value: {
+            text: data.firstName
+          }
+        },
+        {
+          key: {
+            text: "Middle name"
+          },
+          value: {
+            text: data.middleName
+          }
+        },
+        {
+          key: {
+            text: "Last name"
+          },
+          value: {
+            text: data.lastName
+          }
+        },
+        {
+          key: {
+            text: "Previous last names"
+          },
+          value: {
+            text: data.previousSurnames
+          }
+        },
+        {
+          key: {
+            text: "National Insurance number"
+          },
+          value: {
+            text: data.redacted.nino
+          }
+        },
+        {
+          key: {
+            text: "Primary contact number"
+          },
+          value: {
+            text: data.redacted.primaryContactNumber
+          }
+        },
+        {
+          key: {
+            text: "Other contact number"
+          },
+          value: {
+            text: data.redacted.otherContactNumber
+          }
+        },
+        {
+          key: {
+            text: "Email address"
+          },
+          value: {
+            text: data.redacted.email
+          }
+        }
+      ]
+    }) }}
+
+    <h2 class="govuk-heading-m" id="itt">Initial teacher training</h2>
+
+    <p>…</p>
   </div>
   <div class="govuk-grid-column-one-third">
     <div class="app-tra-panel govuk-!-margin-bottom-2">

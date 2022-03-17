@@ -89,4 +89,20 @@ $tra-dark-grey: #e5e5e5;
       background: none;
     }
   }
+
+  .app-tra-summary-list {
+    .govuk-summary-list__key {
+      display: block;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      width: auto;
+    }
+
+    .govuk-summary-list__value {
+      display: block;
+      margin-top: 0;
+      padding-top: 0;
+      width: auto;
+    }
+  }
 }
