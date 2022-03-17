@@ -19,11 +19,6 @@ export default {
   previousSurnames: ['Bloggs'],
   primaryContactNumber: '07123456789',
   otherContactNumber: '01234 987654',
-  address: {
-    line1: '1 Street Name',
-    town: 'Town',
-    postcode: 'SW1 1AA'
-  },
   redacted: {
     firstName: 'Jane',
     lastName: 'Doe',
@@ -34,11 +29,6 @@ export default {
     title: 'Mrs.',
     previousSurnames: ['Bloggs'],
     primaryContactNumber: '07*******89',
-    otherContactNumber: '01*******54',
-    address: {
-      line1: '1 Street Name',
-      town: 'Town',
-      postcode: 'SW1 1AA'
-    }
+    otherContactNumber: '01*******54'
   }
 }
