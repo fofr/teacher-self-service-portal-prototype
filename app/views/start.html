@@ -118,6 +118,85 @@
     <h2 class="govuk-heading-m" id="itt">Initial teacher training</h2>
 
     <p>…</p>
+
+    <h2 class="govuk-heading-m govuk-!-margin-top-9" id="alerts">Alerts</h2>
+
+    <p>1 alert found</p>
+
+    <p>Contact the Teaching Regulation Agency for details.</p>
+    <ul class="govuk-list">
+      <li>Telephone: 020 7593 5394</li>
+      <li>Lines are open Monday to Thursday, 9am to 5pm, and on Friday from 9am to 4:30pm (except public holidays)</li>
+    </ul>
+
+    <h2 class="govuk-heading-m govuk-!-margin-top-9" id="alerts">Alerts</h2>
+
+    {{ govukSummaryList({
+      classes: "govuk-summary-list--no-border app-tra-summary-list govuk-!-margin-bottom-2",
+      rows: [
+        {
+          key: {
+            text: "Alert type"
+          },
+          value: {
+            text: "A possible matching record was found. Please contact the DBS before employing this person"
+          }
+        },
+        {
+          key: {
+            text: "Start date"
+          },
+          value: {
+            text: "14 February 2022"
+          }
+        }
+      ]
+    }) }}
+
+    <p>Contact the Teaching Regulation Agency for details.</p>
+    <ul class="govuk-list">
+      <li>Telephone: 020 7593 5394</li>
+      <li>Lines are open Monday to Thursday, 9am to 5pm, and on Friday from 9am to 4:30pm (except public holidays)</li>
+    </ul>
+
+    <h2 class="govuk-heading-m govuk-!-margin-top-9" id="alerts">Alerts</h2>
+
+    <p>2 alerts found</p>
+
+    <ul class="govuk-list">
+      <li>An alert started on 14 May 2019</li>
+      <li>An alert started on 20 February 2022</li>
+    </ul>
+    <p></p>
+
+    <!-- {{ govukSummaryList({
+      classes: "govuk-summary-list--no-border app-tra-summary-list",
+      rows: [
+        {
+          key: {
+            text: "Alert type"
+          },
+          value: {
+            text: "A possible matching record was found. Please contact the DBS before employing this person"
+          }
+        },
+        {
+          key: {
+            text: "Start date"
+          },
+          value: {
+            text: "14 February 2022"
+          }
+        }
+      ]
+    }) }} -->
+
+    <p>Contact the Teaching Regulation Agency for details.</p>
+    <ul class="govuk-list">
+      <li>Telephone: 020 7593 5394</li>
+      <li>Lines are open Monday to Thursday, 9am to 5pm, and on Friday from 9am to 4:30pm (except public holidays)</li>
+    </ul>
+
   </div>
   <div class="govuk-grid-column-one-third">
     <div class="app-tra-panel govuk-!-margin-bottom-2">
